@@ -10,7 +10,7 @@
         <title>DeepNetwork</title> 
     </head>
     <body>
-        <section id="hero-section">
+        <section id="header-section" >
             <nav id="navigation">
                 <a href="" class="navigation-logo">
                     <img src="images/header/logo.svg" alt="Deep Network">
@@ -30,16 +30,72 @@
                     </select>
                 </div>
             </nav>
-        </section>
-        <section id="services-section">
-            <header>Services</header>
-            <h3>Our areas of expertise</h2>
-            <p>From cloud infrastructure and big data, we deliver cutting edge solutions and expert training tailored to your needs.</p>
-            <div class="services-box">
-                <h3>Cloud <br>Services</h3>
-                <p>Expert cloud solutions tailored to your needs, backend by certified professionals and proven project success.</p>
-                <a href="">Learn more</a>
+            <div id="header">
+                <h1>Empowering your business with <br>Cloud, AI and Big Data solutions.</h1>
+                <p>Every great business needs reliable tech expertise, and we’re here to deliver scalable <br>solutions for your success.</p>
+                <button class="classic-btn">Get to know us</button>
             </div>
+            <div></div>
+        </section>
+        <section id="about-section">
+            <div class="custom-section">
+                <header>ABOUT US</header>
+                <h1>Transform your business<br> with expert IT solutions</h1>
+                <p>As a Microsoft Gold Partner since 2019, Deep <br>Network helps businesses optimize operations with <br>cloud, AI, and machine learning solutions.<br><br>
+    
+                    Our certified specialists in Microsoft Dynamics CRM<br>and ERP work to solve challenges, drive growth,<br> and ensure long-term success for your <br>organization.</p>
+                    <button class="classic-btn">Get to know us</button>
+            </div>
+            <div></div>
+        </section>
+        <section id="services-section" class="custom-section">
+            <header>SERVICES</header>
+            <h1>Our areas of expertise</h2>
+            <p>From cloud infrastructure and big data, we deliver cutting edge solutions and expert <br>training tailored to your needs.</p>
+            <div id="service-grid">
+                <div class="services-box">
+                    <h1>Cloud <br>Services</h3>
+                    <p>Expert cloud solutions tailored to your needs, backend by certified professionals and proven project success.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="services-box">
+                    <h1>LLM/AI Solutions <br>and LLMOps</h3>
+                    <p>Advanced AI solutions for smarter decisions, automated knowledge management, and a competitive edge with cutting-edge LLM technology.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="services-box">
+                    <h1>Big Data <br>Analytics Platform</h3>
+                    <p>Transform your data into insights with scalable analytics, enabling smarter decisions and real-time analysis.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="services-box">
+                    <h1>Trainings &<br>Workshops</h3>
+                    <p>Expert training designed to enhance your skills and knowledge, led by industry professionals with proven experience.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+            <button class="classic-btn">All services</button>
+        </section>
+        <section id="technology-section" class="custom-section">
+            <header>TECHNOLOGY</header>
+            <h1>Software solutions we are <br>experts in</h1>
+            <p>Harness top-tier software solutions to elevate your development process, driving scalability <br> and excellence.</p>
+            <div id="logos">
+                <div class="carousel">
+                    <img src="./images/technology/amazon-kinesis.svg" alt="">
+                    <img src="./images/technology/amazon-synapse.svg" alt="">
+                    <img src="./images/technology/aws.svg" alt="">
+                    <img src="./images/technology/azure.svg" alt="">
+                    <img src="./images/technology/databricks.svg" alt="">
+                    <img src="./images/technology/spark.svg" alt="">
+                    <img src="./images/technology/terraform.svg" alt="">
+                </div>
+            </div>
+
+            <script>
+                var duplicate = document.querySelector(".carousel").cloneNode(true);
+                document.querySelector("#logos").appendChild(duplicate);
+            </script>
         </section>
     </body>
 </html>
