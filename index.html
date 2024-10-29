@@ -37,6 +37,7 @@
             </div>
             <div></div>
         </section>
+
         <section id="about-section">
             <div class="custom-section">
                 <header>ABOUT US</header>
@@ -48,8 +49,10 @@
             </div>
             <div></div>
         </section>
-        <section id="services-section" class="custom-section">
-            <header>SERVICES</header>
+
+        <section id="services-section">
+            <div class="custom-section central-item">
+                <header>SERVICES</header>
             <h1>Our areas of expertise</h2>
             <p>From cloud infrastructure and big data, we deliver cutting edge solutions and expert <br>training tailored to your needs.</p>
             <div id="service-grid">
@@ -75,11 +78,13 @@
                 </div>
             </div>
             <button class="classic-btn">All services</button>
+            </div>
         </section>
-        <section id="technology-section" class="custom-section">
+
+        <section id="technology-section" class="custom-section central-item">
             <header>TECHNOLOGY</header>
             <h1>Software solutions we are <br>experts in</h1>
-            <p>Harness top-tier software solutions to elevate your development process, driving scalability <br> and excellence.</p>
+            <p>Harness top-tier software solutions to elevate your development process, driving scalability and excellence.</p>
             <div id="logos">
                 <div class="carousel">
                     <img src="./images/technology/amazon-kinesis.svg" alt="">
@@ -91,11 +96,56 @@
                     <img src="./images/technology/terraform.svg" alt="">
                 </div>
             </div>
-
             <script>
                 var duplicate = document.querySelector(".carousel").cloneNode(true);
                 document.querySelector("#logos").appendChild(duplicate);
             </script>
+        </section>
+
+        <section id="business-model-section">
+            <div class="custom-section central-item" >
+                <header>BUSINESS MODEL</header>
+                <h1>Discover our tailered <br>approaches that drive <br>growth</h1>
+                <p>Harness top-tier software solutions to elevate your <br>development process, driving scalability and <br>excellence.</p>
+                <div class="model-grid">
+                    <div class="model-box">
+                        <div class="image-background">
+                            <img src="./images/business-model/1.svg" alt="">
+                        </div>
+                        <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    </div>
+                    <div class="model-box">
+                        <div class="image-background">
+                            <img src="./images/business-model/2.svg" alt="">
+                        </div>
+                        <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    </div>
+                    <div class="model-box">
+                        <div class="image-background">
+                            <img src="./images/business-model/3.svg" alt="">
+                        </div>
+                        <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    </div>
+                    <div class="model-box">
+                        <div class="image-background">
+                            <img src="./images/business-model/4.svg" alt="">
+                        </div>
+                        <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    </div>
+                    <div class="model-box">
+                        <div class="image-background">
+                            <img src="./images/business-model/5.svg" alt="">
+                        </div>
+                        <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    </div>
+                    <div class="model-box">
+                        <div class="image-background">
+                            <img src="./images/business-model/6.svg" alt="">
+                        </div>
+                        <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>
