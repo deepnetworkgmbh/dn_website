@@ -1,4 +1,4 @@
-/* GENERAL */
+/* General */
 :root {
     --dark-blue:#0062AF;
     --light-blue:#F7FBFF;
@@ -14,10 +14,6 @@
     font-family: "Inter", Helvetica, sans-serif;
 }
 
-p {
-    line-height: 1.5;
-}
-
 .classic-btn{
     background-color: var(--dark-blue);
     color: white;
@@ -31,7 +27,7 @@ p {
     font-weight: 200;
 }
 
-/* HEADER */
+/* Header */
 #header-section{
     display: flex;
     flex-direction: column;
@@ -74,7 +70,7 @@ p {
     font-weight: 200;
 }
 
-/* NAVIGATION BAR */
+/* Navigation */
 #navigation{
     display: flex;
     justify-content: space-between;
@@ -107,7 +103,7 @@ p {
     font-size: 0;
 }
 
-/* GENERAL SECTIONS */
+/* Custom Section*/
 .custom-section{
     display: flex;
     flex-direction: column;
@@ -143,9 +139,10 @@ p {
     color: var(--text-grey);
     font-weight: 200;
     font-size: 22px;
+    line-height: 1.5;
 }
 
-/* ABOUT US */
+/* About Us */
 #about-section{
     display: flex;
     justify-content: space-around;
@@ -158,7 +155,7 @@ p {
     margin-top: 2rem;
 }
 
-/* SERVICES */
+/* Service */
 #services-section{
     align-items: center;
     background-color: var(--light-blue);
@@ -293,7 +290,7 @@ p {
     background: linear-gradient(180deg, rgba(153,153,153,0.08), white);
 }
 
-/* BUSINESS MODEL */
+/* Business Model */
 #business-model-section{
     background-color: var(--light-blue);
 }
@@ -338,7 +335,7 @@ p {
     font-weight: 300;
 }
 
-/* CASE STUDIES */
+/* Case Studies */
 #case-studies-section{
     align-items: center;
     text-align: center;
