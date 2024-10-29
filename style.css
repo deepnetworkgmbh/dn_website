@@ -226,6 +226,7 @@
 }
 
 #logos {
+    display: flex;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -250,20 +251,16 @@
 
 #logos:after{
     right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0), red);
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
 }
-
 
 .carousel {
     display: inline-block;
     
     padding: 10px 0px;
+    margin: 0;
 
-    animation: 5s slide infinite linear;
-}
-
-.logos:hover{
-    animation-play-state: paused;
+    animation: 35s slide infinite linear;
 }
 
 .carousel img{
