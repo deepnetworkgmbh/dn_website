@@ -4,6 +4,7 @@
     --dark-blue:#0062AF;
     --light-blue:#F7FBFF;
     --text-grey: #595959;
+    --light-grey: #999999;
 }   
 
 * {
@@ -377,16 +378,106 @@
 #case-studies-section{
     align-items: center;
     text-align: center;
+
+    position: relative;
+    z-index: 3;
+}
+
+#case-studies-section .classic-btn{
+    margin-top: 48px;
+    
+    width: 242px;
+}
+
+#case-study-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.case-study-cell{
+    display: flex;
+    flex-direction: column;
+
+    width: 570px;
+    height: 431px;
+
+    border-radius: 15px;
+    border: 1px solid transparent;
+
+    box-shadow: 10px 10px 10px lightblue;
+}
+
+.case-study-cell:hover{
+    border: 1px  solid var(--dark-blue);
+}
+
+.case-study-cell img{
+    object-fit: cover;
+    
+    height: 253px;
+
+    border-radius: 15px 15px 0 0;
+}
+
+.case-study-metadata{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 178px;
+
+    text-align: left;
+
+    margin: 24px 40px;
+}
+
+.case-study-metadata time{
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--light-grey);
+}
+
+.case-study-metadata h2{
+    font-size: 18px;
+}
+
+.case-study-metadata a{
+    font-size: 16px;
+    color: var(--dark-blue);
+    text-decoration: none;
 }
 
 /* Lets Talk */
 #lets-talk-section{
+    position: relative;
     align-items: center;
     text-align: center;
 
     background: linear-gradient(180deg, rgba(7,34,73,0.7), rgba(7,34,73,1));
 
     color: white;
+
+    padding-top: 350px;
+    margin-top: -150px;
+}
+
+#lets-talk-section::before{
+    position: absolute;
+
+    top: 0;
+
+    width: 100%;
+    height: 300px;
+
+    content: "";
+    z-index: 2;
+    left: 0;
+    background-color: white;
+
+    border-radius: 100% 0% 100% 0% / 0% 0% 100% 100% ;
 }
 
 #lets-talk-section p{
