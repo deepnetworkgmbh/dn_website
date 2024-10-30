@@ -146,14 +146,51 @@
 /* About Us */
 #about-section{
     display: flex;
-    justify-content: space-around;
-
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    justify-content: flex-end;
+    gap: 150px;
 }
 
 #about-section button{
     margin-top: 2rem;
+}
+
+#detail-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-bottom: 5.5rem;
+}
+
+#detail-wrapper img{
+    height: 495.05px;
+    width: 719px;
+
+    position: relative;
+    top: -150px;
+
+    border-radius: 300px 0 0 300px;
+}
+
+#about-details{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+#about-details .detail-box{
+    margin-right: 30px;
+}
+
+#about-details h2{
+    color: var(--text-grey);
+    font-size: 42px;
+}
+
+#about-details p{
+    color: var(--text-grey);
+    font-size: 22px;
+    font-weight: 200;
 }
 
 /* Service */
