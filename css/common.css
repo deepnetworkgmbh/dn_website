@@ -1,0 +1,30 @@
+:root {
+    --darker-blue:#072249;
+    --dark-blue:#0062AF;
+    --light-blue:#F7FBFF;
+    --text-grey: #595959;
+    --light-grey: #999999;
+}   
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+.classic-btn{
+    background-color: var(--dark-blue);
+    color: white;
+    
+    width: 192px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+
+    font-size: 1.1rem;
+    font-weight: 200;
+}

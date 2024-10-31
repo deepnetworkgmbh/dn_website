@@ -1,33 +1,5 @@
 /* General */
-:root {
-    --darker-blue:#072249;
-    --dark-blue:#0062AF;
-    --light-blue:#F7FBFF;
-    --text-grey: #595959;
-    --light-grey: #999999;
-}   
-
-* {
-    margin: 0px;
-    padding: 0px;
-
-    box-sizing: border-box;
-
-    font-family: "Inter", Helvetica, sans-serif;
-}
-
-.classic-btn{
-    background-color: var(--dark-blue);
-    color: white;
-    
-    width: 192px;
-    height: 45px;
-    border-radius: 25px;
-    border: none;
-
-    font-size: 1.1rem;
-    font-weight: 200;
-}
+@import url("common.css");
 
 /* Header */
 #header-section{
@@ -418,6 +390,7 @@
     object-fit: cover;
     
     height: 253px;
+    width: 570px;
 
     border-radius: 15px 15px 0 0;
 }
