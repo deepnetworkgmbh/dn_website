@@ -1,0 +1,53 @@
+/* General */
+@import url("common.css");
+
+#header-statistic-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 22%;
+    width: 100%;
+    
+    background-color: rgba(7, 34, 73, 0.37);
+}
+
+.statistic{
+    display: flex;
+    flex-direction: column;
+
+    height: 117px;
+
+    margin-right: 50px;
+    margin-left: 50px;
+
+    color: white;
+}
+
+.statistic h3{
+    font-size: 42px;
+}
+
+.statistic p{
+    font-size: 22px;
+    font-weight: 150;
+}
+
+.statistic-spacer{
+    height: 117px;
+    border-right: 1px solid white;
+}
+
+/* About Us */
+#about-us-section .custom-section{
+    align-items: center;
+
+    text-align: center;
+}
+
+#about-us-section img{
+    width: 100%;
+    height: 439px;
+
+    object-fit: cover;
+}
