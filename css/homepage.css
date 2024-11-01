@@ -90,7 +90,7 @@
     border: 1px solid transparent;
 
     background-color:white;
-    box-shadow: 15px 15px 15px lightblue;
+    box-shadow: 15px 15px 15px var(--shadow-color);
 
     text-align: left;
 }
@@ -125,44 +125,6 @@
     align-items: center;
 
     text-align: center;
-}
-
-@keyframes slide{
-    from{
-        transform: translate(0);
-    }
-    to{
-        transform: translate(-100%);
-    }
-}
-
-#logos {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    max-width: 1080px;
-}
-
-#logos:before,
-#logos::after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-
-    content: "";
-    z-index: 2;
-}
-
-#logos:before{
-    left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0), white);
-}
-
-#logos:after{
-    right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0), white);
 }
 
 .carousel img{
@@ -255,7 +217,7 @@
     border-radius: 15px;
     border: 1px solid transparent;
 
-    box-shadow: 10px 10px 10px lightblue;
+    box-shadow: 10px 10px 10px var(--shadow-color);
 }
 
 .case-study-cell:hover{
@@ -344,95 +306,4 @@
 
 #testimonials-section h1{
     text-align: center;
-}
-
-/* Footer */
-#footer-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    padding: 100px 120px;
-
-    background-color: var(--darker-blue);
-
-    color: white;
-    font-weight: 200;
-    font-size: 16px;
-}
-
-#footer-section *{
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-#footer-section > *{
-    margin-bottom: 20px;
-}
-
-#footer-logo{
-    width: 100%;
-}
-
-#footer-texts{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#footer-site-map{
-    display: flex;
-    flex-direction: column;
-}
-
-#footer-site-map a{
-    margin-top: 1rem;
-
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-#footer-address-wrapper{
-    display: flex;
-    justify-content: space-around;
-
-    min-width: 50%;
-}
-
-.footer-address{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 246px;
-}
-
-.footer-address p{
-    margin-top: 10px;
-}
-
-.footer-address-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    justify-self: flex-end;
-    margin-top:30px;
-}
-
-.footer-address-contact img{
-    filter: invert(100%);
-}
-
-.contact-info{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin-top: 10px;
-}
-
-.contact-info img{
-    margin-right: 10px;
 }

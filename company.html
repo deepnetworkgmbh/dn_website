@@ -72,15 +72,153 @@
                 Our commitment to continuous learning ensures we stay at the forefront of technology trends, helping businesses <br>
                 optimize operations and achieve long-term success through innovative, scalable solutions.</p>
         </div>
- <img src="../images/company/image.png" alt="office">
+        <img src="../images/company/image.png" alt="office">
     </section>
 
-    <!-- <section id="certifications-section" class="custom-section">
+    <section id="certifications-section" class="custom-section">
         <header>CERTIFICATIONS</header>
         <h1>Expertise you can trust</h1>
-        <div class="carousel">
-            <img src="../images/technology/azure.svg" alt="certification">
+        <div id="certifications-carousel" class="carousel-wrapper">
+            <div class="carousel">
+                <img src="../images/company/certifications/aws-associate.png" alt="aws-associate">
+                <img src="../images/company/certifications/aws-solutions-architect.png" alt="aws-solutions-architect">
+                <img src="../images/company/certifications/az-administrator.png" alt="az-administrator">
+                <img src="../images/company/certifications/az-ai.png" alt="az-ai">
+                <img src="../images/company/certifications/az-cosmos-db.png" alt="az-cosmos-db">
+                <img src="../images/company/certifications/az-data-associate.png" alt="az-data-associate">
+                <img src="../images/company/certifications/az-data-engineer.png" alt="az-data-engineer">
+                <img src="../images/company/certifications/az-developer-associate.png" alt="az-developer-associate">
+                <img src="../images/company/certifications/az-devops.png" alt="az-devops">
+                <img src="../images/company/certifications/az-solutions-architect.png" alt="az-solutions-architect">
+                <img src="../images/company/certifications/ckad.png" alt="ckad">
+            </div>
         </div>
-    </section> -->
+        <script src="./js/duplicateCarouselContent.js"></script>
+    </section>
+
+    <section id="our-team-section">
+        <div class="custom-section central-item">
+            <header>OUR TEAM</header>
+            <h1>Meet our expert team</h1>
+            <p>Our team combines engineering excellence with international experience, delivering local <br>
+            insights with a global impact.</p>
+            <div class="card-grid">
+                <div class="photo-card">
+                    <img src="" alt="profile-picture">
+                    <h1>SAVAS <br>
+                    GUVEN</h1>
+                    <h2>Founder and CTO</h2>
+                </div>
+                <div class="photo-card">
+                    <img src="" alt="profile-picture">
+                    <h1>OLIVER <br>
+                    RIEKENBRAUK</h1>
+                    <h2>Director of Business Development</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline-section" class="custom-section central-item">
+        <header>TIMELINE</header>
+        <h1>Our growth</h1>
+        <div class="timeline">
+            <div class="line"></div>
+            <div id="pin1" class="pin" onClick="selectPin(this.id)">
+                <div>2020</div>
+                <img src="./images/company/icons/unselected.svg" alt="">
+            </div>
+            <div id="pin2" class="pin" onClick="selectPin(this.id)">
+                <div>2021</div>
+                <img src="./images/company/icons/unselected.svg" alt="">
+            </div>
+            <div id="pin3" class="pin" onClick="selectPin(this.id)">
+                <div>2022</div>
+                <img src="./images/company/icons/selected.svg" alt="">
+            </div>
+            <div id="pin4" class="pin" onClick="selectPin(this.id)">
+                <div>2023</div>
+                <img src="./images/company/icons/unselected.svg" alt="">
+            </div>
+            <div id="pin5" class="pin" onClick="selectPin(this.id)">
+                <div>2024</div>
+                <img src="./images/company/icons/unselected.svg" alt="">
+            </div>
+
+            <script src="./js/alterTimeline.js"></script>
+        </div>
+        <h2>Achivements</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil repellat voluptates unde amet repellendus quidem aut sapiente at fugit nostrum facere voluptate commodi accusantium enim officia, atque nulla? Modi culpa distinctio eveniet iste veniam cumque nulla quisquam quae? Quia veritatis voluptatum impedit nesciunt voluptas porro consequatur officiis nostrum reiciendis.</p>
+    </section>
+
+    <section id="career-section" class="custom-section">
+        <header>CAREER</header>
+        <h1>Want to join our <span style="color:var(--dark-blue)">team</span>?</h1>
+        <p>We’re constantly seeking skilled individuals to become part of our rapidly expanding team. <br> 
+            Check out the current job openings on our Careers page.</p>
+            <button class="classic-btn">Apply now</button>
+    </section>
+
+    <footer id="footer-section">
+        <a id="footer-logo" class="navigation-logo">
+            <img src="images/header/logo.svg" alt="Deep Network">
+        </a>
+        <div id="footer-texts">
+            <p id="footer-description">Empowering businesses with cutting-edge <br> 
+                Cloud, AI, and Data solutions. Trusted <br>
+                expertise, global reach.</p>
+            <p id="footer-legal-description">Managing Director: Savas Guven <br>
+                Domicile and court of registry: München <br>
+                Commercial register No.: 229 039 <br>
+                V.A.T. Identification No.: DE309314229</p>
+        </div>
+        <nav id="footer-site-map">
+            <h1>SITEMAP</h1>
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Company</a>
+            <a href="">Case Study</a>
+            <a href="">Blog</a>
+            <a href="">Career</a>
+        </nav>
+        <div id="footer-address-wrapper">
+            <address id="footer-address-germany" class="footer-address">
+                <h1>GERMANY</h1>
+                <p>
+                    Deep Network GmbH <br>
+                    Zeppelinstr. 73 <br>
+                    DE-81669 München <br>
+                </p>
+                <div class="footer-address-contact">
+                    <div class="contact-info">
+                        <img src="./images/footer/phone.svg" alt="phone-icon">
+                        <span>+49 (0) 89 2316 6638</span>
+                    </div>
+                    <div class="contact-info">
+                        <img src="./images/footer/email.svg" alt="email-icon">
+                        <span>info@deepnetwork.com</span>
+                    </div>
+                </div>
+            </address>
+            <address id="footer-address-usa" class="footer-address">
+                <h1>USA</h1>
+                <p>
+                    Deep Network Corp. <br>
+                    1321 Upland Dr. Apt #2133 <br>
+                    Houston, TX 77043 <br>
+                </p>
+                <div class="footer-address-contact">
+                    <div class="contact-info">
+                        <img src="./images/footer/phone.svg" alt="phone-icon">
+                        <span>+1 425 247 0842</span>
+                    </div>
+                    <div class="contact-info">
+                        <img src="./images/footer/email.svg" alt="email-icon">
+                        <span>info@deepnetwork.com</span>
+                    </div>
+                </div>
+            </address>
+        </div>
+    </footer>
 </body>
 </html>
