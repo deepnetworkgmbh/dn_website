@@ -6,15 +6,11 @@ function selectPin(id){
         .forEach(pin =>{
             pin.getElementsByTagName("img")[0].src = "./images/company/icons/unselected.svg";
             var text = pin.getElementsByTagName("div")[0];
-            text.style.color = "black";
-            text.style.fontWeight = "300";
-            // text.style.fontSize = "18px";
+            text.className = "not-selected";
         });
 
     // Adjust selected pin
     var text = pin.getElementsByTagName("div")[0];
-    text.style.color = "var(--dark-blue)";
-    text.style.fontWeight = "bold";
-    // pin.getElementsByTagName("div")[0].style.fontSize = "32px";
+    text.className = "selected";
     pin.getElementsByTagName("img")[0].src = "./images/company/icons/selected.svg";
 }
