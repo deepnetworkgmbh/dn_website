@@ -123,6 +123,13 @@
   margin-left: auto;
 }
 
+.central-item-large {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .custom-section header{
   color: var(--dark-blue);
 
@@ -283,4 +290,75 @@
 
 .contact-info img{
   margin-right: 10px;
+}
+
+/* Lets Talk */
+#lets-talk-section{
+  position: relative;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(180deg, rgba(7,34,73,0.7), rgba(7,34,73,1));
+
+  color: white;
+
+  padding-top: 350px;
+  margin-top: -150px;
+}
+
+#lets-talk-section::before{
+  position: absolute;
+
+  top: 0;
+
+  width: 100%;
+  height: 300px;
+
+  content: "";
+  z-index: 2;
+  left: 0;
+  background-color: white;
+
+  border-radius: 100% 0% 100% 0% / 0% 0% 100% 100% ;
+}
+
+#lets-talk-section p{
+  color: white;
+
+  margin: 1.5rem 0;
+}
+
+/* Technology */
+#technology-section{
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 3;
+}
+
+#technology-section .carousel img{
+  margin: 0px 20px ;
+  padding: 20px;
+
+  height: 80px;
+
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+
+  background: linear-gradient(180deg, rgba(153,153,153,0.08), white);
+}
+
+/* Card */
+.card{
+  padding: 40px;
+
+  border-radius: 5%;
+
+  background-color:white;
+  box-shadow: 15px 15px 15px var(--shadow-color);
+
+  text-align: left;
 }

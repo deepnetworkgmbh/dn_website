@@ -65,7 +65,13 @@
     height: 104px;
     width: 106px;
 
-    margin-right: 15px;
+    object-fit: cover;
+
+    border: none;
+    background: none;
+
+    margin: 0 15px 0 0;
+    padding: 0;
 }
 
 /* Our team */
