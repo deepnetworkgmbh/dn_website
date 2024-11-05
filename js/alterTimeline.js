@@ -4,7 +4,7 @@ function selectPin(id){
     // Reset pins
     Array.from(pin.parentElement.getElementsByClassName("pin"))
         .forEach(pin =>{
-            pin.getElementsByTagName("img")[0].src = "./images/company/icons/unselected.svg";
+            pin.getElementsByTagName("img")[0].src = "../images/company/icons/unselected.svg";
             var text = pin.getElementsByTagName("div")[0];
             text.className = "not-selected";
         });
@@ -12,5 +12,5 @@ function selectPin(id){
     // Adjust selected pin
     var text = pin.getElementsByTagName("div")[0];
     text.className = "selected";
-    pin.getElementsByTagName("img")[0].src = "./images/company/icons/selected.svg";
+    pin.getElementsByTagName("img")[0].src = "../images/company/icons/selected.svg";
 }

@@ -17,17 +17,25 @@
 }
 
 #service-section-content {
-    display: grid;
+    display: flex;
     grid-template-columns: auto auto;
+
+    gap: 5%;
 
     padding-top: 5.5rem;
 }
 
-#content-column {
-    padding-top: 0;
+#service-section-content .custom-section{
+    justify-content: flex-start;
 }
 
-.dropdown-item {
+#content-column {
+    padding-top: 0;
+
+    width: 200%;
+}
+
+.dropdown {
     margin-bottom: 15px;
 }
 
@@ -52,7 +60,39 @@
     object-fit: contain;
 }
 
+.dropdown-content{
+    margin: 2rem 0 0 3rem;
 
+    list-style: none;
+}
+
+.dropdown-content li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dropdown-content li:not(:last-child){
+    margin-bottom: 6%;
+}
+
+.dropdown-content li h1{
+    margin-left: 2%;
+    
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.dropdown-content li p{
+    margin-top: 3%;
+    
+    width: 100%;
+
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.5;
+}
 
 /* Ways of Work  */
 #ways-of-work-section {
@@ -95,4 +135,9 @@
     padding: 0;
 
     font-size: 18px;
+}
+
+/* Lets talk */
+#lets-talk-section{
+    margin-top: -100px;
 }
