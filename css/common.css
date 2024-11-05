@@ -1,11 +1,11 @@
 :root {
-    --darker-blue:#072249;
-    --dark-blue:#0062AF;
-    --light-blue:#F7FBFF;
-    --text-grey: #595959;
-    --light-grey: #999999;
-    --shadow-color:#DEEBF7;
-}   
+  --darker-blue: #072249;
+  --dark-blue: #0062AF;
+  --light-blue: #F7FBFF;
+  --text-grey: #595959;
+  --light-grey: #999999;
+  --shadow-color: #DEEBF7;
+}
 
 *,
 *:before,
@@ -17,39 +17,37 @@
   font-family: "Inter", Helvetica, sans-serif;
 }
 
-.classic-btn{
-    background-color: var(--dark-blue);
-    color: white;
-    
-    width: 192px;
-    height: 45px;
-    border-radius: 25px;
-    border: none;
+.classic-btn {
+  background-color: var(--dark-blue);
+  color: white;
 
-    font-size: 1.1rem;
-    font-weight: 200;
+  width: 192px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+
+  font-size: 1.1rem;
+  font-weight: 200;
 }
 
 /* Header */
-#header-section{
+#header-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: linear-gradient(
-      180deg,
-      hsla(210, 100%, 14%,1),
-      hsla(210, 100%, 14%,0.8)
-      ),
-      url(../images/header/hero.png);
+  background-image: linear-gradient(180deg,
+      hsla(210, 100%, 14%, 1),
+      hsla(210, 100%, 14%, 0.8)),
+    url(../images/header/hero.png);
 
   background-size: cover;
   background-position: center;
-  
+
   height: 100vh;
 }
 
-#header{
+#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,13 +58,13 @@
   text-align: center;
 }
 
-#header h1{
+#header h1 {
   font-weight: bold;
   font-size: 4rem;
   font-weight: 600;
 }
 
-#header p{
+#header p {
   padding: 2rem;
 
   font-size: 1.4rem;
@@ -74,24 +72,24 @@
 }
 
 /* Navigation */
-#navigation{
+#navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 1rem 3rem;
 
   text-decoration: none;
 }
 
-#navigation a{
+#navigation a {
   text-decoration: none;
   font-size: 1rem;
   margin: 1rem;
   color: white;
 }
 
-#navigation a:hover{
+#navigation a:hover {
   text-decoration: underline;
 }
 
@@ -99,7 +97,7 @@
   display: flex;
 }
 
-#language-selector select{
+#language-selector select {
   background: none;
   border: none;
   color: white;
@@ -107,10 +105,10 @@
 }
 
 /* Custom Section*/
-.custom-section{
+.custom-section {
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 
   padding-top: 5.5rem;
   padding-bottom: 5.5rem;
@@ -130,20 +128,20 @@
   margin-left: auto;
 }
 
-.custom-section header{
+.custom-section header {
   color: var(--dark-blue);
 
-  font-weight:bold;
+  font-weight: bold;
   font-size: 22px;
 }
 
-.custom-section h1{
+.custom-section h1 {
   font-size: 42px;
 
   margin: 1rem 0;
 }
 
-.custom-section p{
+.custom-section p {
   padding: 1rem 0;
 
   color: var(--text-grey);
@@ -173,28 +171,29 @@
   z-index: 2;
 }
 
-.carousel-wrapper:before{
+.carousel-wrapper:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
-.carousel-wrapper:after{
+.carousel-wrapper:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), white);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-@keyframes slide{
-  from{
-      transform: translate(0);
+@keyframes slide {
+  from {
+    transform: translate(0);
   }
-  to{
-      transform: translate(-100%);
+
+  to {
+    transform: translate(-100%);
   }
 }
 
 .carousel {
   display: inline-block;
-  
+
   padding: 10px 0px;
   margin: 0;
 
@@ -202,7 +201,7 @@
 }
 
 /* Footer */
-#footer-section{
+#footer-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -216,31 +215,31 @@
   font-size: 16px;
 }
 
-#footer-section *{
+#footer-section * {
   font-size: 16px;
   line-height: 1.5;
 }
 
-#footer-section > *{
+#footer-section>* {
   margin-bottom: 20px;
 }
 
-#footer-logo{
+#footer-logo {
   width: 100%;
 }
 
-#footer-texts{
+#footer-texts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#footer-site-map{
+#footer-site-map {
   display: flex;
   flex-direction: column;
 }
 
-#footer-site-map a{
+#footer-site-map a {
   margin-top: 1rem;
 
   color: white;
@@ -248,14 +247,14 @@
   font-size: 14px;
 }
 
-#footer-address-wrapper{
+#footer-address-wrapper {
   display: flex;
   justify-content: space-around;
 
   min-width: 50%;
 }
 
-.footer-address{
+.footer-address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -263,7 +262,7 @@
   height: 246px;
 }
 
-.footer-address p{
+.footer-address p {
   margin-top: 10px;
 }
 
@@ -273,14 +272,14 @@
   justify-content: flex-start;
 
   justify-self: flex-end;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-.footer-address-contact img{
+.footer-address-contact img {
   filter: invert(100%);
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -288,17 +287,17 @@
   margin-top: 10px;
 }
 
-.contact-info img{
+.contact-info img {
   margin-right: 10px;
 }
 
 /* Lets Talk */
-#lets-talk-section{
+#lets-talk-section {
   position: relative;
   align-items: center;
   text-align: center;
 
-  background: linear-gradient(180deg, rgba(7,34,73,0.7), rgba(7,34,73,1));
+  background: linear-gradient(180deg, rgba(7, 34, 73, 0.7), rgba(7, 34, 73, 1));
 
   color: white;
 
@@ -306,7 +305,7 @@
   margin-top: -150px;
 }
 
-#lets-talk-section::before{
+#lets-talk-section::before {
   position: absolute;
 
   top: 0;
@@ -319,17 +318,17 @@
   left: 0;
   background-color: white;
 
-  border-radius: 100% 0% 100% 0% / 0% 0% 100% 100% ;
+  border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
 }
 
-#lets-talk-section p{
+#lets-talk-section p {
   color: white;
 
   margin: 1.5rem 0;
 }
 
 /* Technology */
-#technology-section{
+#technology-section {
   display: flex;
   align-items: center;
 
@@ -339,8 +338,8 @@
   z-index: 3;
 }
 
-#technology-section .carousel img{
-  margin: 0px 20px ;
+#technology-section .carousel img {
+  margin: 0px 20px;
   padding: 20px;
 
   height: 80px;
@@ -348,16 +347,16 @@
   border: 1px solid lightgrey;
   border-radius: 25px;
 
-  background: linear-gradient(180deg, rgba(153,153,153,0.08), white);
+  background: linear-gradient(180deg, rgba(153, 153, 153, 0.08), white);
 }
 
 /* Card */
-.card{
+.card {
   padding: 40px;
 
   border-radius: 5%;
 
-  background-color:white;
+  background-color: white;
   box-shadow: 15px 15px 15px var(--shadow-color);
 
   text-align: left;
