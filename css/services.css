@@ -1,5 +1,9 @@
 @import url("common.css");
 
+#header-section{
+    margin-bottom: -10%;
+}
+
 /* Services */
 #service-section {
     display: flex;
