@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deep Network - Services">
     <link rel="stylesheet" href="../css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <title>Services</title>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="../js/adjustDropdown.js"></script>
 </head>
 
 <body>
@@ -65,7 +68,7 @@
                 <div class="dropdown">
                     <div class="card">
                         <header>Cloud Services</header>
-                        <img class="dropdown-toggle" src="../images/services/icons/maximize.svg" alt="">
+                        <input type="checkbox" class="dropdown-toggle" @click="update">
                     </div>
                     <ul class="dropdown-content">
                         <li>
@@ -97,19 +100,45 @@
                 <div class="dropdown">
                     <div class="card">
                         <header>LLM/AI Solutions</header>
-                        <img class="dropdown-toggle" src="../images/services/icons/maximize.svg" alt="">
+                        <input type="checkbox" class="dropdown-toggle" @click="update">
                     </div>
+                    <ul class="dropdown-content">
+                        <li>
+                            <img src="../images/services/icons/check.svg" alt="">
+                            <h1>Scalability</h1>
+                            <p>Easily scale your resources to match your business needs, ensuring optimal performance
+                                during peak times without overspending during quieter periods.</p>
+                        </li>
+                        <li>
+                            <img src="../images/services/icons/check.svg" alt="">
+                            <h1>Security</h1>
+                            <p>Our solutions prioritize robust security measures, protecting your data and applications
+                                with advanced encryption, compliance standards, and regular audits.</p>
+                        </li>
+                        <li>
+                            <img src="../images/services/icons/check.svg" alt="">
+                            <h1>Security</h1>
+                            <p>Tailor our products to fit your unique business requirements, enabling a seamless
+                                integration with your existing systems and workflows.</p>
+                        </li>
+                        <li>
+                            <img src="../images/services/icons/check.svg" alt="">
+                            <h1>Expert Support</h1>
+                            <p>Benefit from our dedicated support team, offering ongoing assistance, training, and
+                                resources to help you maximize the potential of our solutions.</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="dropdown">
                     <div class="card">
                         <header>Big data analytics platform</header>
-                        <img class="dropdown-toggle" src="../images/services/icons/maximize.svg" alt="">
+                        <input type="checkbox" class="dropdown-toggle" @click="update">
                     </div>
                 </div>
                 <div class="dropdown">
                     <div class="card">
                         <header>Trainings & Workshops</header>
-                        <img class="dropdown-toggle" src="../images/services/icons/maximize.svg" alt="">
+                        <input type="checkbox" class="dropdown-toggle" @click="update">
                     </div>
                 </div>
             </div>
@@ -160,7 +189,7 @@
                 <img src="../images/homepage/technology/terraform.svg" alt="">
             </div>
         </div>
-        <script src="../js/duplicateCarouselContent.js"></script>
+        <script defer src="../js/duplicateCarouselContent.js"></script>
     </section>
 
     <section id="lets-talk-section" class="custom-section">
@@ -193,44 +222,42 @@
             <a href="">Blog</a>
             <a href="">Career</a>
         </nav>
-        <div id="footer-address-wrapper">
-            <address id="footer-address-germany" class="footer-address">
-                <h1>GERMANY</h1>
-                <p>
-                    Deep Network GmbH <br />
-                    Zeppelinstr. 73 <br />
-                    DE-81669 München <br />
-                </p>
-                <div class="footer-address-contact">
-                    <div class="contact-info">
-                        <img src="../images/footer/phone.svg" alt="phone-icon">
-                        <span>+49 (0) 89 2316 6638</span>
-                    </div>
-                    <div class="contact-info">
-                        <img src="../images/footer/email.svg" alt="email-icon">
-                        <span>info@deepnetwork.com</span>
-                    </div>
+        <address id="footer-address-germany" class="footer-address">
+            <h1>GERMANY</h1>
+            <p>
+                Deep Network GmbH <br />
+                Zeppelinstr. 73 <br />
+                DE-81669 München <br />
+            </p>
+            <div class="footer-address-contact">
+                <div class="contact-info">
+                    <img src="../images/footer/phone.svg" alt="phone-icon">
+                    <span>+49 (0) 89 2316 6638</span>
                 </div>
-            </address>
-            <address id="footer-address-usa" class="footer-address">
-                <h1>USA</h1>
-                <p>
-                    Deep Network Corp. <br />
-                    1321 Upland Dr. Apt #2133 <br />
-                    Houston, TX 77043 <br />
-                </p>
-                <div class="footer-address-contact">
-                    <div class="contact-info">
-                        <img src="../images/footer/phone.svg" alt="phone-icon">
-                        <span>+1 425 247 0842</span>
-                    </div>
-                    <div class="contact-info">
-                        <img src="../images/footer/email.svg" alt="email-icon">
-                        <span>info@deepnetwork.com</span>
-                    </div>
+                <div class="contact-info">
+                    <img src="../images/footer/email.svg" alt="email-icon">
+                    <span>info@deepnetwork.com</span>
                 </div>
-            </address>
-        </div>
+            </div>
+        </address>
+        <address id="footer-address-usa" class="footer-address">
+            <h1>USA</h1>
+            <p>
+                Deep Network Corp. <br />
+                1321 Upland Dr. Apt #2133 <br />
+                Houston, TX 77043 <br />
+            </p>
+            <div class="footer-address-contact">
+                <div class="contact-info">
+                    <img src="../images/footer/phone.svg" alt="phone-icon">
+                    <span>+1 425 247 0842</span>
+                </div>
+                <div class="contact-info">
+                    <img src="../images/footer/email.svg" alt="email-icon">
+                    <span>info@deepnetwork.com</span>
+                </div>
+            </div>
+        </address>
     </footer>
 </body>
 

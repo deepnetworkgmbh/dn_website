@@ -62,10 +62,10 @@
 }
 
 .carousel img {
-    height: 104px;
-    width: 106px;
+    height: 120px;
+    width: 120px;
 
-    object-fit: cover;
+    object-fit:contain;
 
     border: none;
     background: none;
@@ -109,6 +109,13 @@
 
     background-color: white;
     box-shadow: 15px 15px 15px var(--shadow-color);
+}
+
+.photo-card img{
+    clip-path: circle(45%);
+    width: 80%;
+
+    background-color: var(--dark-blue);
 }
 
 .photo-card h1 {

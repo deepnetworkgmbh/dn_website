@@ -220,7 +220,13 @@
   line-height: 1.5;
 }
 
-#footer-section>* {
+#footer-section > *:not(:first-child) {
+  flex-grow: 1;
+
+  margin-right: 20px;
+}
+
+#footer-section > * {
   margin-bottom: 20px;
 }
 
@@ -245,13 +251,6 @@
   color: white;
   text-decoration: none;
   font-size: 14px;
-}
-
-#footer-address-wrapper {
-  display: flex;
-  justify-content: space-around;
-
-  min-width: 50%;
 }
 
 .footer-address {
