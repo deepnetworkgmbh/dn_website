@@ -74,10 +74,6 @@
     list-style: none;
 }
 
-.dropdown-content:not(:first-child){
-    display: none;
-}
-
 .dropdown-content li{
     display: flex;
     flex-direction: row;

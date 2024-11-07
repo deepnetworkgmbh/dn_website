@@ -121,11 +121,8 @@
   margin-left: auto;
 }
 
-.central-item-large {
+.central-item.large {
   max-width: 1200px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .custom-section header {
@@ -227,7 +224,7 @@
 }
 
 #footer-section > * {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #footer-logo {
@@ -253,12 +250,19 @@
   font-size: 14px;
 }
 
+#address-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .footer-address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   height: 246px;
+  margin-bottom: 30px;
 }
 
 .footer-address p {
@@ -293,8 +297,6 @@
 /* Lets Talk */
 #lets-talk-section {
   position: relative;
-  align-items: center;
-  text-align: center;
 
   background: linear-gradient(180deg, rgba(7, 34, 73, 0.7), rgba(7, 34, 73, 1));
 
@@ -302,6 +304,8 @@
 
   padding-top: 350px;
   margin-top: -150px;
+
+  z-index: -1;
 }
 
 #lets-talk-section::before {
@@ -320,6 +324,11 @@
   border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
 }
 
+#lets-talk-section .custom-section{
+  align-items: center;
+  text-align: center;
+}
+
 #lets-talk-section p {
   color: white;
 
@@ -334,7 +343,6 @@
   text-align: center;
 
   position: relative;
-  z-index: 3;
 }
 
 #technology-section .carousel img {

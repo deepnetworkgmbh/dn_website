@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <title>DeepNetwork</title>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="./js/loadDynamicSections.js"></script>
 </head>
 
 <body>
@@ -52,7 +54,8 @@
                 <br />cloud, AI, and machine learning solutions.<br /><br />
 
                 Our certified specialists in Microsoft Dynamics CRM<br />and ERP work to solve challenges, drive
-                growth,<br /> and ensure long-term success for your <br />organization.</p>
+                growth,<br /> and ensure long-term success for your <br />organization.
+            </p>
             <button class="classic-btn">Get to know us</button>
         </div>
         <div id="detail-wrapper">
@@ -116,7 +119,8 @@
     <section id="technology-section" class="custom-section central-item">
         <header>TECHNOLOGY</header>
         <h1>Software solutions we are <br />experts in</h1>
-        <p>Harness top-tier software solutions to elevate your development process, driving scalability and excellence.
+        <p>We specialize in delivering robust, high-performance cloud, data, and analytics solutions that drive
+            operational efficiency and strategic growth, leveraging advanced technologies, such as:​
         </p>
         <div class="carousel-wrapper">
             <div class="carousel">
@@ -134,10 +138,10 @@
 
     <section id="business-model-section">
         <div class="custom-section central-item">
-            <header>BUSINESS MODEL</header>
-            <h1>Discover our tailered <br />approaches that drive <br />growth</h1>
-            <p>Harness top-tier software solutions to elevate your <br />development process, driving scalability and
-                <br />excellence.</p>
+            <header>WHY DEEP NETWORK?</header>
+            <h1>Explore what makes us the ideal technology consulting and solutions partner.</h1>
+            <p>Here are the six standout reasons that differantiate us </br>from the competition.
+            </p>
             <div class="model-grid">
                 <div class="model-box">
                     <div class="image-background">
@@ -149,31 +153,31 @@
                     <div class="image-background">
                         <img src="./images/homepage/business-model/2.svg" alt="">
                     </div>
-                    <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    <p>We bring broad experience and offer a "one-stop shop" for all Microsoft Azure projects.</p>
                 </div>
                 <div class="model-box">
                     <div class="image-background">
                         <img src="./images/homepage/business-model/3.svg" alt="">
                     </div>
-                    <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    <p>As a MS Gold Partner, our team stays current with the latest Azure technology trends.</p>
                 </div>
                 <div class="model-box">
                     <div class="image-background">
                         <img src="./images/homepage/business-model/4.svg" alt="">
                     </div>
-                    <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    <p>Whether you need 1 or 20 engineers, we can scale your project quickly and efficiently.</p>
                 </div>
                 <div class="model-box">
                     <div class="image-background">
                         <img src="./images/homepage/business-model/5.svg" alt="">
                     </div>
-                    <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    <p>Customers can select highly qualified candidates through CVs and conduct interviews before hiring.</p>
                 </div>
                 <div class="model-box">
                     <div class="image-background">
                         <img src="./images/homepage/business-model/6.svg" alt="">
                     </div>
-                    <p>We are a software company, not an agency that relies on freelance contractors.</p>
+                    <p>Immediate access to skilled resources onsite, onshore, or nearshore (EU or Turkey), fully GDPR-compliant.</p>
                 </div>
             </div>
         </div>
@@ -182,24 +186,14 @@
     <section id="case-studies-section" class="custom-section">
         <header>CASE STUDIES</header>
         <h1>Latest insights from our <br />experts</h1>
-        <p>Stay informed with our recent blogs, covering industry trends, technology tips, and deep <br />
+        <p>Stay informed with our recent blogs, covering industry trends, technology tips, and deep
             dives into cutting-edge solutions.</p>
-        <div id="case-study-grid">
-            <div class="case-study-cell">
-                <img src="./images/homepage/case-studies/img-1.png" alt="office">
+        <div id="case-study-wrapper">
+            <div v-for="caseStudy in caseStudies" :key="caseStudy.header" class="case-study-cell">
+                <img :src="caseStudy.image" loading="lazy" alt="office">
                 <div class="case-study-metadata">
-                    <time datetime="2020-01-01">January 2020</time>
-                    <h2>How to Setup an ELK Stack and FileBeat <br />
-                        on Kubernetes</h2>
-                    <a href="">Read more</a>
-                </div>
-            </div>
-            <div class="case-study-cell">
-                <img src="./images/homepage/case-studies/img-2.png" alt="office">
-                <div class="case-study-metadata">
-                    <time datetime="2020-03-01">March 2020</time>
-                    <h2>Password protected EFK Stack on <br />
-                        Kubernetes</h2>
+                    <time datetime="2020-01-01">{{caseStudy.date}}</time>
+                    <h2>{{caseStudy.header}}</h2>
                     <a href="">Read more</a>
                 </div>
             </div>
@@ -207,11 +201,16 @@
         <button id="" class="classic-btn">See our case studies</button>
     </section>
 
-    <section id="lets-talk-section" class="custom-section">
-        <h1>Let's talk about your next <br />project</h1>
-        <p>Whether you're looking to scale your cloud infrastructure, implement AI solutions, or <br />optimize your
-            data analytics, our team is here to help.</p>
-        <button class="classic-btn">Get a quote</button>
+    <section id="lets-talk-section">
+        <div class="custom-section central-item">
+            <h1>Let's talk about how we can help</h1>
+            <p>Whether you're looking to migrate your legacy solutions to the cloud, implement AI solutions,
+                or optimize your data analytics, our team is here to support you. ​</br>
+    
+                We offer flexible engagements, either by providing skilled specialists for ongoing support or
+                delivering comprehensive, milestone-driven projects for end-to-end solutions​</p>
+            <button class="classic-btn">Contact us</button>
+        </div>
     </section>
 
     <section id="testimonials-section" class="custom-section">
@@ -241,42 +240,44 @@
             <a href="">Blog</a>
             <a href="">Career</a>
         </nav>
-        <address id="footer-address-germany" class="footer-address">
-            <h1>GERMANY</h1>
-            <p>
-                Deep Network GmbH <br />
-                Zeppelinstr. 73 <br />
-                DE-81669 München <br />
-            </p>
-            <div class="footer-address-contact">
-                <div class="contact-info">
-                    <img src="./images/footer/phone.svg" alt="phone-icon">
-                    <span>+49 (0) 89 2316 6638</span>
+        <div id="address-wrapper">
+            <address id="footer-address-germany" class="footer-address">
+                <h1>GERMANY</h1>
+                <p>
+                    Deep Network GmbH <br />
+                    Zeppelinstr. 73 <br />
+                    DE-81669 München <br />
+                </p>
+                <div class="footer-address-contact">
+                    <div class="contact-info">
+                        <img src="./images/footer/phone.svg" alt="phone-icon">
+                        <span>+49 (0) 89 2316 6638</span>
+                    </div>
+                    <div class="contact-info">
+                        <img src="./images/footer/email.svg" alt="email-icon">
+                        <span>info@deepnetwork.com</span>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <img src="./images/footer/email.svg" alt="email-icon">
-                    <span>info@deepnetwork.com</span>
+            </address>
+            <address id="footer-address-usa" class="footer-address">
+                <h1>USA</h1>
+                <p>
+                    Deep Network Corp. <br />
+                    1321 Upland Dr. Apt #2133 <br />
+                    Houston, TX 77043 <br />
+                </p>
+                <div class="footer-address-contact">
+                    <div class="contact-info">
+                        <img src="./images/footer/phone.svg" alt="phone-icon">
+                        <span>+1 425 247 0842</span>
+                    </div>
+                    <div class="contact-info">
+                        <img src="./images/footer/email.svg" alt="email-icon">
+                        <span>info@deepnetwork.com</span>
+                    </div>
                 </div>
-            </div>
-        </address>
-        <address id="footer-address-usa" class="footer-address">
-            <h1>USA</h1>
-            <p>
-                Deep Network Corp. <br />
-                1321 Upland Dr. Apt #2133 <br />
-                Houston, TX 77043 <br />
-            </p>
-            <div class="footer-address-contact">
-                <div class="contact-info">
-                    <img src="./images/footer/phone.svg" alt="phone-icon">
-                    <span>+1 425 247 0842</span>
-                </div>
-                <div class="contact-info">
-                    <img src="./images/footer/email.svg" alt="email-icon">
-                    <span>info@deepnetwork.com</span>
-                </div>
-            </div>
-        </address>
+            </address>
+        </div>
         </div>
     </footer>
 </body>
