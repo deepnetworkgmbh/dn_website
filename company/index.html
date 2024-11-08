@@ -14,6 +14,8 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet">
         <title>Company</title>
+        <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script defer src="../js/alterTimeline.js"></script>
     </head>
 </head>
 
@@ -131,34 +133,43 @@
         <h1>Our growth</h1>
         <div class="timeline">
             <div class="line"></div>
-            <div id="pin1" class="pin" onClick="selectPin(this.id)">
-                <div class="not-selected">2020</div>
+            <div id="pin1" class="pin" :class="{selected: pin1Selected}" @click="selectPin">
+                <div>2020</div>
                 <img src="../images/company/icons/unselected.svg" alt="">
             </div>
-            <div id="pin2" class="pin" onClick="selectPin(this.id)">
-                <div class="not-selected">2021</div>
+            <div id="pin2" class="pin" :class="{selected: pin2Selected}" @click="selectPin">
+                <div>2021</div>
                 <img src="../images/company/icons/unselected.svg" alt="">
             </div>
-            <div id="pin3" class="pin" onClick="selectPin(this.id)">
-                <div class="selected">2022</div>
-                <img src="../images/company/icons/selected.svg" alt="">
-            </div>
-            <div id="pin4" class="pin" onClick="selectPin(this.id)">
-                <div class="not-selected">2023</div>
+            <div id="pin3" class="pin" :class="{selected: pin3Selected}" @click="selectPin">
+                <div>2022</div>
                 <img src="../images/company/icons/unselected.svg" alt="">
             </div>
-            <div id="pin5" class="pin" onClick="selectPin(this.id)">
-                <div class="not-selected">2024</div>
+            <div id="pin4" class="pin" :class="{selected: pin4Selected}" @click="selectPin">
+                <div>2023</div>
                 <img src="../images/company/icons/unselected.svg" alt="">
             </div>
-
-            <script defer src="../js/alterTimeline.js"></script>
+            <div id="pin5" class="pin" :class="{selected: pin5Selected}" @click="selectPin">
+                <div>2024</div>
+                <img src="../images/company/icons/unselected.svg" alt="">
+            </div>
         </div>
         <h2>Achivements</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil repellat voluptates unde amet
-            repellendus quidem aut sapiente at fugit nostrum facere voluptate commodi accusantium enim officia, atque
-            nulla? Modi culpa distinctio eveniet iste veniam cumque nulla quisquam quae? Quia veritatis voluptatum
-            impedit nesciunt voluptas porro consequatur officiis nostrum reiciendis.</p>
+        <p v-show="pin1Selected">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto minus aperiam
+            at. Tempora eaque ducimus, dolores ex neque quaerat molestias ipsum perferendis ut harum dolor aliquid? Aut,
+            voluptatibus tempore.</p>
+        <p v-show="pin2Selected">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quaerat ab nostrum
+            adipisci eius debitis excepturi cupiditate aliquam ullam similique maxime tempora harum mollitia
+            accusantium, molestiae quasi quam eveniet cumque?</p>
+        <p v-show="pin3Selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem ad, commodi
+            temporibus quibusdam consequuntur inventore numquam accusamus molestias nesciunt! Necessitatibus qui
+            laboriosam facilis consectetur a deleniti, sequi alias sint.</p>
+        <p v-show="pin4Selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestiae minus
+            quod excepturi dicta iure earum, harum numquam doloribus exercitationem eligendi amet ipsa enim accusantium
+            dignissimos adipisci aspernatur saepe nihil!</p>
+        <p v-show="pin5Selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos repellat suscipit
+            dicta odio, amet nisi eaque, corrupti officia impedit provident ab similique totam? Et ea quam quibusdam
+            atque omnis?</p>
     </section>
 
     <section id="career-section" class="custom-section">

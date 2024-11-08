@@ -17,6 +17,10 @@
   font-family: "Inter", Helvetica, sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .classic-btn {
   background-color: var(--dark-blue);
   color: white;

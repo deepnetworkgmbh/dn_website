@@ -58,6 +58,8 @@
     background-image: url("../images/services/icons/maximize.svg");
     object-fit: contain;
 
+    min-height: 35px;
+    min-width: 35px;
     height: 35px;
     width: 35px;
 
